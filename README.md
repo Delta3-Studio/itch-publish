@@ -44,7 +44,7 @@ jobs:
         with:
           name: ${{ matrix.channel }}
           path: build/${{ matrix.channel }}
-      - uses: KikimoraGames/itch-publish@v0.0.3
+      - uses: Delta3-Studio/itch-publish@v0.0.1
         with:
           butlerApiKey: ${{secrets.BUTLER_API_KEY}}
           gameData: ./build/${{ matrix.template }}
@@ -52,5 +52,12 @@ jobs:
           itchGameId: ${{ env.ITCH_GAME_ID }}
           buildChannel: ${{ matrix.channel }}
           buildNumber: ${{ needs.version.outputs.version_hash }}
-
 ```
+
+## License
+
+Distributed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome.  Please open issues or submit pull requests for improvements or bug fixes. 
