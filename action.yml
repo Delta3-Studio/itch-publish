@@ -1,4 +1,4 @@
-name: "Itch.io - Publish"
+name: "Itch.io - Butler Publish"
 description: "Publish releases to Itch.io"
 author: Delta3-Studio
 runs:
